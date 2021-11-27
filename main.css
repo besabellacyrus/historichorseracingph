@@ -23,7 +23,7 @@ body {
 .parallax {
     background-image: url('images/landing-bg-1.png');
     background-attachment: fixed;
-    background-position: center;
+    background-position: contain;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -40,8 +40,9 @@ body {
 }
 
 .logo {
-    position: relative;
+    position: absolute;
     margin-bottom: 30px;
+    bottom: 5%;
     right: 0;
 }
 
@@ -83,10 +84,6 @@ body {
 
 .footer-bar img {
     height: 60px;
-}
-
-@media only screen and (width: 1024px) {
-
 }
 
 @media only screen and (max-width: 768px) {
