@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+    font-family: 'CMU Serif Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('CMU Serif Roman'), url('fonts/cmunrm.woff') format('woff');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'CMU Serif Roman';
+}
+
+.parallax {
+    background-image: url('images/landing-bg-1.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.logo {
+    position: absolute;
+    margin-bottom: 30px;
+    right: 0;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.footer {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #27645B;
+    height: 100vh;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 43px;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.footer-bar {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #27645B;
+    width: 100%;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-bar span {
+    margin-right: 10px;
+}
+
+.footer-bar img {
+    height: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main {
+        grid-template-columns: auto;
+    }
+    .logo {
+        position: relative;
+        right: initial;
+    }
+    .footer-bar img {
+        margin: 0 auto;
+    }
+    .footer-bar {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
