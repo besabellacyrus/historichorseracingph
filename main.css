@@ -21,32 +21,34 @@ body {
 }
 
 .parallax {
-    background-image: url('images/landing-bg-1.png');
+    background-image: url('images/bg-hhr.jpeg');
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr auto;
     justify-content: center;
-    align-items:flex-end;
+    align-items:flex-start;
     text-align: center;
     height: 100vh;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    /* text-shadow: 1px 1px 1px #000; */
 }
 
-.logo {
-    position: absolute;
-    margin-bottom: 30px;
-    bottom: 5%;
-    right: 0;
+.main-header {
+    background-color: #fff;
+}
+
+.main-header h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #5C8314;
+    font-size: 20px;
 }
 
 .logo img {
-    width: 300px;
+    width: 190px;
 }
 
 .footer {
@@ -92,22 +94,9 @@ body {
         height: 100%;
         overflow: hidden;
     }
-    .main {
-        height: 30vh;
-    }
-    .logo {
-        top: 10%;
-    }
 }
 
 @media only screen and (max-width: 768px) {
-    .main {
-        grid-template-columns: auto;
-    }
-    .logo {
-        position: relative;
-        right: initial;
-    }
     .footer-bar img {
         margin: 0 auto;
     }
