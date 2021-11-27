@@ -22,6 +22,7 @@ body {
 
 .parallax {
     background-image: url('images/bg-hhr.jpeg');
+    /* min-height: 500px; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,15 +88,6 @@ body {
     height: 60px;
 }
 
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .parallax {
-        background-size: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .footer-bar img {
         margin: 0 auto;
@@ -105,5 +97,11 @@ body {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
     }
 }
