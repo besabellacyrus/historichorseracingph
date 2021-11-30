@@ -88,6 +88,15 @@ body {
     height: 60px;
 }
 
+@media only screen and (max-width: 425px) {
+    .parallax {
+        overflow: hidden;
+    }
+    .footer h1 {
+        letter-spacing: 5px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .footer-bar img {
         margin: 0 auto;
